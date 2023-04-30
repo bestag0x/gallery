@@ -16,7 +16,7 @@ export const App = ({ images }) => {
   <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
     <color attach="background" args={['#191920']} />
     <fog attach="fog" args={['#191920', 0, 15]} />
-    <ScrollControls damping={0.5} pages={1.7}>
+    <ScrollControls >
 
     <Scroll>
     <group position={[0, -0.5, 0]}>
