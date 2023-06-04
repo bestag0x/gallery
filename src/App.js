@@ -16,9 +16,6 @@ export const App = ({ images }) => {
   <Canvas dpr={[1, 1.5]} camera={{ fov: 70, position: [0, 2, 15] }}>
     <color attach="background" args={['#191920']} />
     <fog attach="fog" args={['#191920', 0, 15]} />
-    <ScrollControls >
-
-    <Scroll>
     <group position={[0, -0.5, 0]}>
       <Frames images={images} />
       <mesh rotation={[-Math.PI / 2, 0, 0]}>
@@ -37,8 +34,6 @@ export const App = ({ images }) => {
           />
       </mesh>
     </group>
-    </Scroll>
-          </ScrollControls>
     <Environment preset="city" />
   </Canvas>
 
