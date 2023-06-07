@@ -34,7 +34,7 @@ export const App = ({ images }) => {
           />
       </mesh>
     </group>
-    <Environment preset="city" />
+    <Environment path="/" files="potsdamer_platz_1k.hdr" />
   </Canvas>
 
 )}
