@@ -1,6 +1,7 @@
 {
   "name": "image-gallery",
-  "version": "1.0.0",
+  "version": "1.0.1",
+  "homepage": "https://bestag0x.github.io",
   "description": "Stage a couple of frames with a reflective, blurred out ground.",
   "keywords": [
     "image",
@@ -20,6 +21,8 @@
     "uuid-by-string": "4.0.0",
     "wouter": "2.8.0-alpha.2"
   },
+  "predeploy": "npm run build",
+  "deploy": "gh-pages -d build",
   "devDependencies": {},
   "scripts": {
     "start": "react-scripts start",
